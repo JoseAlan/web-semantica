@@ -1,0 +1,91 @@
+{
+    "@context": "http://localhost/ontologia_pokemon/",
+    "@type": "Ginasio",
+    "localizacao": "Rua Aleatória, Juazeiro do Norte, Ceará, Brasil",
+    "tempoDominacaoGinasio": "6 horas e 30 minutos",
+    "timeGinasio": 
+        {
+            "@type": "TimeJogador",
+            "nomeTime": "Valor",
+            "corTime": "Vermelho"
+        }
+    ,
+    "pokemonGinasio": 
+        {
+            "@type": "Pokemon",
+            "numeroPokedex": "#9",
+            "nomePokemon": "Blastoise",
+            "pontosDeVida": "160",
+            "pontosDeCombate": "2466",
+            "geracao":{
+                "@type": "Geracao",
+                "nomeGeracao": "Kanto"
+            },
+            "tipoPoder":
+                {
+                    "@type": "TipoPoder",
+                    "nomeGeracao": "Water"
+                },
+            "golpes":[
+                {
+                    "@type": "Golpes",
+                    "tipoGolpe": "Rápido",
+                    "nomeGolpe": "Water Gun",
+                    "dPS": "12 dps",
+                    "tipoPoderGolpe":{
+                        "@type": "TipoPoder",
+                        "nomeGeracao": "Water"
+                    }
+                },
+                {
+                    "@type": "Golpes",
+                    "tipoGolpe": "Especial",
+                    "nomeGolpe": "Hydro Cannon",
+                    "dPS": "56.8 dps",
+                    "tipoPoderGolpe":{
+                        "@type": "TipoPoder",
+                        "nomeGeracao": "Water"
+                    }
+                }
+            ]
+        }, 
+    "jogadorGinasio":{
+        "@type": "Jogador",
+        "apelido": "Jeff",
+        "nivel": "40"
+    },
+    "raidGinasio":{
+        "identificadorRaid": "Raid Especial 18 horas",
+        "nivelRaid": "5",
+        "horaInicial": "18:00",
+        "horaFinal": "19:00",
+        "pokemonRaid":{
+            "@type": "Pokemon",
+            "numeroPokedex": "#150",
+            "nomePokemon": "Mewtwo",
+            "geracao":{
+                "@type": "Geracao",
+                "nomeGeracao": "Kanto"
+            },
+            "tipoPoder":{
+                "@type": "TipoPoder",
+                "nomeGeracao": "Pyshic"
+            }
+        },
+        "pokemonPremioRaid": {
+            "@type": "Pokemon",
+            "numeroPokedex": "#150",
+            "nomePokemon": "Mewtwo",
+            "geracao":{
+                "@type": "Geracao",
+                "nomeGeracao": "Kanto"
+            },
+            "tipoPoder":{
+                "@type": "TipoPoder",
+                "nomeGeracao": "Pyshic"
+            }
+        }
+    }
+
+
+}
