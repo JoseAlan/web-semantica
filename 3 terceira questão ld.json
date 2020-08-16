@@ -1,0 +1,54 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@graph": [
+        {
+        "@id": "#autor",
+        "@type": "Person",
+        "name": "George R.R. Martin",
+        "birthDate": "1949"
+       },
+       {
+        "@id": "#book",
+        "@type": "Book",
+        "name": "A game os Thrones",
+        "inLanguage": "en",
+        "genre": "epic fantasy",
+        "author": "#author"
+      },
+      {
+        "@id": "#serie",
+        "@type": "TVSeries",
+        "name": "Game os Thrones",
+        "datePublished": "2011-04-17",
+        "genre": "Political novel, epic fantasy",
+        "inLanguage": "en",
+        "author": "#author",
+        "book": "#book"
+      },
+      {
+        "@id": "#podcast",
+        "@type": "PodcastEpisode",
+        "name": "Hodor Cavalo #074",
+        "episodeTitle": "Fogo, Sangue e Nascimento | Daenerys X, A 								Guerra  dos Tronos",
+        "episodeNumber": 74,
+        "genre": "Podcast",
+        "inLanguage": "pt-BR",
+        "book": "#book",
+        "tvseries": "#serie"
+      },
+      {
+        "@id": "#game",
+        "@type": "VideoGame",
+        "name": "Game of Thrones: Winter is Coming",
+        "datePublished": "2019-03-26",
+        "inLanguage": "en",
+        "genre": "Massively multiplayer online real-time strategy game",
+        "publisher": "Youzu Interactive, YOUZU (SINGAPORE) PTE. LTD",
+        "tvseries": "#serie"
+      }
+        
+    ]
+}
+</script>
+

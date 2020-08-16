@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Pokelogia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Ontologia de Pokemon Go">
+	<meta name="author" content="Jhonatta Pietro">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ontologia Pokémon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="ontologia.html">Ontologia
+                <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="exemplos.html">Exemplos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modelo.html">Modelo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <h1 class="font-weight-light">Projeto: Ontologia do Pokémon GO!</h1>
+        <p class="lead">Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada 
+            voltado para smartphones. O jogo é desenvolvido entre a Niantic, Inc., 
+            a Nintendo e a The Pokémon Company para as plataformas iOS e Android.</p>
+        <p class="lead">Scroll down...</p>
+
+        <div class="table-responsive-md" id="jogador">
+            <p class="h5">Jogador</p>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>identificador</td>
+                    <td>Texto</td>
+                    <td>Número de Identificação do Usuário.</td>
+                  </tr>
+
+                  <tr>
+                    <td>apelido</td>
+                    <td>Texto</td>
+                    <td>Nome de utilização do jogador.</td>
+                  </tr>
+
+                  <tr>
+                    <td>time</td>
+                    <td><a href="#timejogador">TimeJogador</a></td>
+                    <td>Time do qual o jogador faz parte.</td>
+                  </tr>
+
+                  <tr>
+                    <td>nivel</td>
+                    <td>Texto</td>
+                    <td>Nível de conta do jogador, valor entre 1 e 40.</td>
+                  </tr>
+
+                  <tr>
+                    <td>experiencia</td>
+                    <td>Texto</td>
+                    <td>Pontos de experiência do jogador.</td>
+                  </tr>
+
+                  <tr>
+                    <td>poeiraEstelar</td>
+                    <td>Texto</td>
+                    <td>Quantidade de poeira estelar acumulada pelo jogador.</td>
+                  </tr>
+
+                  <tr>
+                    <td>itens</td>
+                    <td><a href="#itensjogo">ItensJogo</a></td>
+                    <td>Itens presentes na conta do jogador.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pokemons</td>
+                    <td><a href="#pokemon">Pokemon</a></td>
+                    <td>Lista de Pokemons obtidos pelo jogador.</td>
+                  </tr>
+
+                  <tr>
+                    <td>ovos</td>
+                    <td><a href="#ovos">Ovos</a></td>
+                    <td>Lista de Ovos obtidos pelo jogador.</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="pokemon">
+            <p class="h5">Pokémon</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>numeroPokedex</td>
+                    <td>Texto</td>
+                    <td>Número de Identificação do Pokémon na Pokedex.</td>
+                  </tr>
+
+                  <tr>
+                    <td>nomePokemon</td>
+                    <td>Texto</td>
+                    <td>Nome do Pokémon</td>
+                  </tr>
+
+                  <tr>
+                    <td>geracao</td>
+                    <td><a href="#geracao">Geração</a></td>
+                    <td>Geração a qual o pokémon pertence.</td>
+                  </tr>
+
+                  <tr>
+                    <td>tipoPoder</td>
+                    <td><a href="#tipopoder">TipoPoder</a></td>
+                    <td>Tipo de poder apresentado pelo pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>golpes</td>
+                    <td><a href="#golpes">Golpes</a></td>
+                    <td>Lista de golpes que pertencem ao pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pontosDeVida</td>
+                    <td>Texto</td>
+                    <td>Pontos de Vida do Pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pontosDeCombate</td>
+                    <td>Texto</td>
+                    <td>Pontos de combate do Pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>peso</td>
+                    <td>Texto</td>
+                    <td>Peso do Pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>altura</td>
+                    <td>Texto</td>
+                    <td>Altura do Pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>genero</td>
+                    <td>Texto</td>
+                    <td>Gênero do Pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>evolucao</td>
+                    <td><a href="#pokemon">Pokemon</a></td>
+                    <td>Possível evolução do Pokémon.</td>
+                  </tr>
+
+                  <tr>
+                    <td>imagePokemon</td>
+                    <td>URL</td>
+                    <td>Imagem do Pokémon.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="tipopoder">
+            <p class="h5">TipoPoder</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>nomePoder</td>
+                    <td>Texto</td>
+                    <td>Nome do tipo de poder.</td>
+                  </tr>
+
+                  <tr>
+                    <td>vuneravel</td>
+                    <td><a href="#tipopoder">TipoPoder</a></td>
+                    <td>Tipo de poder para qual ele é vunerável.</td>
+                  </tr>
+
+                  <tr>
+                    <td>resistente</td>
+                    <td><a href="#tipopoder">TipoPoder</a></td>
+                    <td>Tipo de poder para qual ele é resistente.</td>
+                  </tr>
+
+                  <tr>
+                    <td>imune</td>
+                    <td><a href="#tipopoder">TipoPoder</a></td>
+                    <td>Tipo de poder para qual ele é imune.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="golpes">
+            <p class="h5">Golpes</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>nomeGolpe</td>
+                    <td>Texto</td>
+                    <td>Nome do golpe.</td>
+                  </tr>
+
+                  <tr>
+                    <td>tipoGolpe</td>
+                    <td>Texto</td>
+                    <td>Tipo do golpe (rápido ou especial).</td>
+                  </tr>
+
+                  <tr>
+                    <td>tipoPoderGolpe</td>
+                    <td><a href="#tipopoder">TipoPoder</a></td>
+                    <td>Tipo do poder aplicado no golpe.</td>
+                  </tr>
+
+                  <tr>
+                    <td>danoBase</td>
+                    <td>Texto</td>
+                    <td>Dano base do golpe.</td>
+                  </tr>
+
+                  <tr>
+                    <td>dPS</td>
+                    <td>Texto</td>
+                    <td>Dano por segundo do golpe.</td>
+                  </tr>
+
+                  <tr>
+                    <td>ePS</td>
+                    <td>Texto</td>
+                    <td>Energia por segundo do golpe.</td>
+                  </tr>
+
+                  <tr>
+                    <td>duracaoAtaque</td>
+                    <td>Texto</td>
+                    <td>Duração em milissegundos do golpe.</td>
+                  </tr>
+
+                  <tr>
+                    <td>variacaoAtaque</td>
+                    <td>Texto</td>
+                    <td>Tempo em milissegundos da variação do golpe.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="itensjogo">
+            <p class="h5">ItensJogo</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>nomeItem</td>
+                    <td>Texto</td>
+                    <td>Nome do item.</td>
+                  </tr>
+
+                  <tr>
+                    <td>precoItem</td>
+                    <td>Texto</td>
+                    <td>Preço do mercado (para ser comprado na loja).</td>
+                  </tr>
+
+                  <tr>
+                    <td>descricaoItem</td>
+                    <td>Texto</td>
+                    <td>Texto descritivo sobre a funcionalidade e duração do item.</td>
+                  </tr>
+
+                  <tr>
+                    <td>imagemItem</td>
+                    <td>URL</td>
+                    <td>Imagem do item.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="ovos">
+            <p class="h5">Ovos</p>
+            <table class="table table-striped" >
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>quilometragemOvo</td>
+                    <td>Texto</td>
+                    <td>Quilometragem a ser percorrida pelo ovo.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pokemonOvo</td>
+                    <td><a href="#pokemon">Pokemon</a></td>
+                    <td>Pokémon presente no ovo.</td>
+                  </tr>
+
+                  <tr>
+                    <td>quilometragemPercorrida</td>
+                    <td>Texto</td>
+                    <td>Quilometragem já percorrida.</td>
+                  </tr>
+
+                  <tr>
+                    <td>imagemOvo</td>
+                    <td>Texto</td>
+                    <td>Imagem do ovo.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+
+        <div class="table-responsive-md" id="ginasio">
+            <p class="h5">Ginásio</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>nomeGinasio</td>
+                    <td>Texto</td>
+                    <td>Nome do ginásio.</td>
+                  </tr>
+
+                  <tr>
+                    <td>localizacaoGinasio</td>
+                    <td>Texto</td>
+                    <td>Localização exata do ginásio.</td>
+                  </tr>
+
+                  <tr>
+                    <td>timeGinasio</td>
+                    <td><a href="#timejogador">TimeJogador</a></td>
+                    <td>Time a qual o ginásio pertence atualmente.</td>
+                  </tr>
+
+                  <tr>
+                    <td>tempoDominacaoGinasio</td>
+                    <td>Texto</td>
+                    <td>Tempo da dominação do time no ginásio.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pokemonGinasio</td>
+                    <td><a href="#pokemon">Pokemon</a></td>
+                    <td>Pokemons presentes no ginásio.</td>
+                  </tr>
+
+                  <tr>
+                    <td>jogadorGinasio</td>
+                    <td><a href="#jogador">Jogador</a></td>
+                    <td>Jogadores presentes no ginásio.</td>
+                  </tr>
+
+                  <tr>
+                    <td>raidGinasio</td>
+                    <td><a href="#raid">Raid</a></td>
+                    <td>Raid que ocorrerá no ginásio.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="raids">
+            <p class="h5">Raids</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>identificadorRaid</td>
+                    <td>Texto</td>
+                    <td>Identificador da Raid.</td>
+                  </tr>
+
+                  <tr>
+                    <td>nivelRaid</td>
+                    <td>Texto</td>
+                    <td>Nível da Raid.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pokemonPremioRaid</td>
+                    <td><a href="#pokemon">Pokemon</a></td>
+                    <td>Pokémon prêmio para os jogadores que finalizarem a raid.</td>
+                  </tr>
+
+                  <tr>
+                    <td>pokemonRaid</td>
+                    <td><a href="#pokemon">Pokemon</a></td>
+                    <td>Pokémon a ser derrotado.</td>
+                  </tr>
+
+                  <tr>
+                    <td>horaInicial</td>
+                    <td>Texto</td>
+                    <td>Hora que a Raid irá iniciar.</td>
+                  </tr>
+
+                  <tr>
+                    <td>horaFinal</td>
+                    <td>Texto</td>
+                    <td>Hora que a Raid irá finalizar.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="timejogador">
+            <p class="h5">TimeJogador</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>nomeTime</td>
+                    <td>Texto</td>
+                    <td>Nome do Time (Instinct, Mystic ou Valor).</td>
+                  </tr>
+
+                  <tr>
+                    <td>descricaoTime</td>
+                    <td>Texto</td>
+                    <td>Descrição do Time.</td>
+                  </tr>
+
+                  <tr>
+                    <td>liderTime</td>
+                    <td>Texto</td>
+                    <td>Nome do personagem líder do time.</td>
+                  </tr>
+
+                  <tr>
+                    <td>logoTime</td>
+                    <td>URL</td>
+                    <td>URL com a imagem da logo.</td>
+                  </tr>
+
+                  <tr>
+                    <td>corTime</td>
+                    <td>Texto</td>
+                    <td>Cor predominante no time.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="geracao">
+            <p class="h5">Geração</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>identificadorGeracao</td>
+                    <td>Texto</td>
+                    <td>Número que identifica a geração.</td>
+                  </tr>
+
+                  <tr>
+                    <td>nomeGeracao</td>
+                    <td>Texto</td>
+                    <td>Nome da região dos pokémons da geração.</td>
+                  </tr>
+
+                  <tr>
+                    <td>numeroPokemonsGeracao</td>
+                    <td>Texto</td>
+                    <td>Quantidade de Pokémons presentes na geração.</td>
+                  </tr>
+
+                  <tr>
+                    <td>dataLancamento</td>
+                    <td>Texto</td>
+                    <td>Data que foi lançada no jogo.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+        <div class="table-responsive-md" id="loja">
+            <p class="h5">Loja</p>
+            <table class="table table-striped">
+                <thead>
+                    
+                  <tr>
+                    <th scope="col">Propriedade</th>
+                    <th scope="col">Tipo Esperado</th>
+                    <th scope="col">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>secaoLoja</td>
+                    <td>Texto</td>
+                    <td>Nome da seção.</td>
+                  </tr>
+
+                  <tr>
+                    <td>itensLoja</td>
+                    <td><a href="#itensjogo">ItensJogo</a></td>
+                    <td>Lista de Itens para vender.</td>
+                  </tr>
+
+                  <tr>
+                    <td>informacoesLoja</td>
+                    <td>Texto</td>
+                    <td>Descrição e informações sobre como funciona a loja.</td>
+                  </tr>
+
+                  <tr>
+                    <td>compraCredito</td>
+                    <td>URL</td>
+                    <td>Conexão com a compra de créditos.</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

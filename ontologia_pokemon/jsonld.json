@@ -1,0 +1,49 @@
+{
+    "@context": "http://localhost/ontologia_pokemon/",
+    "@type": "Jogador",
+    "apelido": "divisaoporzero",
+    "nivel": "35",
+    "time": 
+        {
+            "@type": "TimeJogador",
+            "nomeTime": "Instinct",
+            "corTime": "Amarelo"
+        }
+    ,
+    "pokemon": [
+        {
+            "@type": "Pokemon",
+            "numeroPokedex": "#1",
+            "nomePokemon": "Bulbassaur",
+            "geracao":{
+                "@type": "Geracao",
+                "nomeGeracao": "Kanto"
+            },
+            "tipoPoder":{
+                "@type": "TipoPoder",
+                "nomeGeracao": "Grass"
+            }
+        },
+        {
+            "@type": "Pokemon",
+            "numeroPokedex": "#214",
+            "nomePokemon": "Heracross",
+            "geracao":{
+                "@type": "Geracao",
+                "nomeGeracao": "Johto"
+            },
+            "tipoPoder":[
+                {
+                    "@type": "TipoPoder",
+                    "nomeGeracao": "Bug"
+                },
+                {
+                    "@type": "TipoPoder",
+                    "nomeGeracao": "Fighting"
+                }
+            ]
+        }
+    ]
+
+
+}
