@@ -1,5 +1,5 @@
 # Trabalho final da diciplina de WEB Semântica 
-##Equipe:
+## Equipe:
 ` 
 José Alan, Jhonatta Pietro , Ramon Felizardo
 `
